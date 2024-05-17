@@ -1,6 +1,15 @@
 #include <Novice.h>
+#include"Vector3.h"
+#include"Matrix4x4.h"
 
 const char kWindowTitle[] = "LD2B_04_コマツザキ_カガリ_タイトル";
+
+//　平面
+struct Plane
+{
+	Vector3 normal;// 法線
+	float distance;// 距離
+};
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
